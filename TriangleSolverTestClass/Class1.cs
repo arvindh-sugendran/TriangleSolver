@@ -171,5 +171,60 @@ namespace TriangleSolverTestClass
             }
         }
 
+        public class TriangleSolverTestClassForInvalidTriangleWithZeroLength
+        {
+            [Test]
+            public void AnalyzeTriangle_WithInput0and9and7_OutputInvalidTriangleWithZeroLength()
+            {
+                // Arrange
+                int firstSide = 0;
+                int secondSide = 9;
+                int thirdSide = 7;
+
+                string expected = "INVALID triangle - a zero was entered";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput5and0and8_OutputInvalidTriangleWithZeroLength()
+            {
+                // Arrange
+                int firstSide = 5;
+                int secondSide = 0;
+                int thirdSide = 8;
+
+                string expected = "INVALID triangle - a zero was entered";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput9and5and0_OutputInvalidTriangleWithZeroLength()
+            {
+                // Arrange
+                int firstSide = 9;
+                int secondSide = 5;
+                int thirdSide = 0;
+
+                string expected = "INVALID triangle - a zero was entered";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+        }
+
     }
 }
