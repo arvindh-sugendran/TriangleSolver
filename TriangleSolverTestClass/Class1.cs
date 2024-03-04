@@ -226,5 +226,61 @@ namespace TriangleSolverTestClass
 
         }
 
+        public class TriangleSolverTestClassForNoTriangleFormedWithNonZeroLength
+        {
+            [Test]
+            public void AnalyzeTriangle_WithInput4and3and7_OutputNoTriangleFormedWithNonZeroLength()
+            {
+                // Arrange
+                int firstSide = 4;
+                int secondSide = 3;
+                int thirdSide = 7;
+
+                string expected = "A triangle is not formed based on the input values";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput5and2and3_OutputNoTriangleFormedWithNonZeroLength()
+            {
+                // Arrange
+                int firstSide = 5;
+                int secondSide = 2;
+                int thirdSide = 3;
+
+                string expected = "A triangle is not formed based on the input values";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput4and5and9_OutputNoTriangleFormedWithNonZeroLength()
+            {
+                // Arrange
+                int firstSide = 4;
+                int secondSide = 5;
+                int thirdSide = 9;
+
+                string expected = "A triangle is not formed based on the input values";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+        }
+
+
     }
 }
