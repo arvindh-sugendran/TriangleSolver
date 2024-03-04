@@ -82,5 +82,94 @@ namespace TriangleSolverTestClass
                 ClassicAssert.AreEqual(expected, actual);
             }
         }
+
+        public class TriangleSolverTestClassForScaleneTriangle
+        {
+            [Test]
+            public void AnalyzeTriangle_WithInput5and8and10_OutputValidScaleneTriangle()
+            {
+                // Arrange
+                int firstSide = 5;
+                int secondSide = 8;
+                int thirdSide = 10;
+
+                string expected = "A triangle is formed and it is a SCALENE";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput12and9and15_OutputValidScaleneTriangle()
+            {
+                // Arrange
+                int firstSide = 12;
+                int secondSide = 9;
+                int thirdSide = 15;
+
+                string expected = "A triangle is formed and it is a SCALENE";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput7and10and11_OutputValidScaleneTriangle()
+            {
+                // Arrange
+                int firstSide = 7;
+                int secondSide = 10;
+                int thirdSide = 11;
+
+                string expected = "A triangle is formed and it is a SCALENE";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput17and13and6_OutputValidScaleneTriangle()
+            {
+                // Arrange
+                int firstSide = 17;
+                int secondSide = 13;
+                int thirdSide = 6;
+
+                string expected = "A triangle is formed and it is a SCALENE";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+
+            [Test]
+            public void AnalyzeTriangle_WithInput9and7and14_OutputValidScaleneTriangle()
+            {
+                // Arrange
+                int firstSide = 9;
+                int secondSide = 7;
+                int thirdSide = 14;
+
+                string expected = "A triangle is formed and it is a SCALENE";
+
+                // Act
+                string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                ClassicAssert.AreEqual(expected, actual);
+            }
+        }
+
     }
 }
